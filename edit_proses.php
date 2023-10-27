@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result_update = mysqli_query($link, $query_update);
 
     if ($result_update) {
-        header("Location: index.php"); // Redirect ke halaman utama setelah data diupdate
+        header("Location: index.php");
     } else {
         echo "Gagal mengupdate data: " . mysqli_error($link);
     }

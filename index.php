@@ -1,7 +1,7 @@
 <?php
-include 'koneksi.php'; // Untuk menyertakan (include) file koneksi.php ke dalam script PHP
+include 'koneksi.php';
 
-$query = "SELECT * FROM sekolah"; // Untuk Memanggil data sesuai tabel
+$query = "SELECT * FROM sekolah";
 
 if (isset($_GET['aksi'])) {
     if ($_GET['aksi'] == 'delete') {
@@ -19,8 +19,6 @@ if (isset($_GET['aksi'])) {
 }
 
 $result = mysqli_query($link, $query);
-//  digunakan untuk menjalankan query SQL yang didefinisikan dalam variabel $query
-//  menggunakan koneksi database yang didefinisikan dalam variabel $link
 ?>
 
 <!DOCTYPE html>
