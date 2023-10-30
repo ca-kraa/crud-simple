@@ -51,6 +51,7 @@ $result = mysqli_query($link, $query);
             echo "<td>" . $row['alamat'] . "</td>";
             echo "<td><a href='edit.php?id=" . $row['id'] . "'>Edit</a> | <a href='?aksi=delete&id=" . $row['id'] . "'>Delete</a></td>";
             echo "</tr>";
+            $no++;
         }
         ?>
     </table>
